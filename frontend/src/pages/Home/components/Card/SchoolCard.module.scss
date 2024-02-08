@@ -1,0 +1,113 @@
+.card-school {
+   margin: 10px;
+   //    margin-left: 40px;
+   background-color: #fff !important;
+   border-radius: 15px !important;
+   overflow: hidden;
+   color: rgba(0, 0, 0, 0.87);
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px,
+      rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+   padding: 10px;
+   cursor: pointer;
+   flex-basis: 23%;
+   flex-grow: 0;
+   max-width: 23%;
+   transition: transform 0.4s;
+   will-change: transform;
+}
+.top-card-school {
+   display: flex;
+   align-items: center;
+}
+.image-card-school img {
+   width: 50px;
+   height: 50px;
+   object-fit: contain;
+   margin-right: 15px;
+}
+.school-name {
+   text-align: start;
+}
+.short-name {
+   color: #8c97b5;
+   font-weight: 500;
+   font-size: 16px;
+   height: 20px;
+   margin-bottom: 0;
+   line-height: 24px;
+}
+.full-name {
+   height: 40px;
+   font-weight: 700;
+   font-size: 15px;
+   text-transform: uppercase;
+   color: #1c3967;
+   margin-bottom: 0;
+   line-height: 22.5px;
+}
+.bottom-cart-school {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 15px 8px 8px !important;
+   font-size: 12px;
+   color: #94a6c0;
+   font-weight: 500;
+}
+.course {
+   display: flex;
+   justify-content: space-between;
+}
+.icon-course {
+   margin-right: 8px;
+}
+.text-course {
+   font-size: 11px;
+   color: #94a6c0;
+   font-weight: 500;
+   line-height: 16.5px;
+}
+.btn-course {
+   min-width: fit-content;
+   padding: 5px 10px;
+   border: 1px solid #c3d1e4;
+   border-radius: 15px;
+   color: #94a6c0;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 12px;
+   color: #94a6c0;
+   font-style: italic;
+   font-weight: 600;
+   line-height: 21px;
+   text-decoration: none;
+   background-color: #fff;
+}
+.card-school:hover {
+   transform: translateY(-10px);
+   background: red !important;
+}
+.card-school:hover * {
+   color: #fff;
+   background-color: red;
+}
+
+.btn-course:hover {
+   text-decoration: none;
+   background-color: rgba(25, 118, 210, 0.04) !important;
+   cursor: pointer;
+}
+.card-school:hover .btn-course {
+   background-color: inherit;
+   color: inherit;
+}
+.card-school:hover svg path {
+   fill: #fff;
+}
+@media (max-width: 576px) {
+   .card-school {
+      flex-basis: 100%;
+      max-width: 100%;
+   }
+}

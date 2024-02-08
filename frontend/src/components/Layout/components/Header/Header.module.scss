@@ -1,0 +1,163 @@
+.wrapper {
+   width: 100%;
+   height: 100px;
+   background-color: #f2f6fc;
+   position: sticky;
+   top: 0;
+   z-index: 10;
+   transition: background-color 0.3s ease;
+   border-bottom: 2px solid rgb(164, 151, 151);
+}
+.scrolled {
+   background-color: #d5e2f7; /* Đổi màu sắc khi phần tử cuộn */
+}
+
+.header__navbar {
+   width: 80%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 24px 20px;
+   height: 100px;
+   margin: auto;
+}
+
+.header__navbar-list {
+   list-style-type: none;
+   padding-left: 0;
+   margin: -4px;
+   font-size: 0;
+   display: flex;
+}
+
+.header__navbar-item {
+   padding: 0 15px;
+}
+
+.header__navbar-item-link {
+   text-decoration: none;
+   color: #000000de;
+   font-weight: 700;
+}
+
+.header__navbar-item-link:hover {
+   color: #e10422;
+}
+.header__navbar-item-link:active {
+   color: #e10422;
+}
+.active-class {
+   color: #e10422;
+}
+.header__navbar-item,
+.header__navbar-link {
+   display: inline-flex;
+   font-size: 1.4rem;
+   align-items: center;
+}
+
+.header__navbar-logo-img {
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+}
+
+.header__navbar-slogan {
+   margin-left: 20px;
+   font-weight: 700;
+   animation: change-color 5s infinite;
+}
+
+.header__member {
+   position: absolute;
+   top: 78px;
+   left: 800px;
+   background-color: #fff;
+   height: 250px;
+   width: 252px;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+   display: none;
+   animation: fadeIn ease-in 0.3s;
+   box-shadow: 0 2px 8px #ccc;
+   z-index: 5;
+}
+.header__member::after {
+   content: '';
+   display: block;
+   position: absolute;
+   top: -23px; /* Đặt giá trị này để phần tử nằm trên đỉnh của .header__member */
+   right: 80px;
+   width: 80px;
+   height: 40px;
+}
+
+.header__member-list {
+   width: 100%;
+   height: 220px;
+   list-style: none;
+   padding: 0px 0px 0px 10px;
+   overflow-y: scroll;
+   margin: 10px -10px 10px -10px;
+}
+.header__navbar-item--has-list:hover .header__member {
+   display: block;
+}
+
+.header__member-item {
+   padding: 5px 0;
+}
+.header__member-item-name {
+   text-decoration: none;
+   color: rgb(28, 57, 103);
+   background-color: rgba(0, 0, 0, 0);
+   line-height: 20px;
+   vertical-align: baseline;
+   letter-spacing: normal;
+   margin: 0px;
+   padding-left: 10px;
+   font-weight: 700;
+   text-align: left;
+   font-size: 13px;
+   /* text-decoration: none solid rgb(28, 57, 103); */
+}
+.header__member-item-name:hover {
+   text-decoration: underline;
+}
+.header__member-item:hover {
+   background-color: #f2f2f2;
+   cursor: pointer;
+}
+@keyframes change-color {
+   0% {
+      color: #ff0000;
+   }
+
+   50% {
+      color: #ffa500;
+   }
+
+   100% {
+      color: #ff0000;
+   }
+}
+
+@keyframes ripple {
+   from {
+      opacity: 1;
+      transform: scale(0);
+   }
+
+   to {
+      opacity: 0;
+      transform: scale(10);
+   }
+}
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}

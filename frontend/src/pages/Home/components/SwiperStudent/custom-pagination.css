@@ -1,0 +1,32 @@
+.mySwiperSlide .swiper-pagination {
+   display: flex;
+   justify-content: center;
+   margin-top: 40px;
+   position: relative;
+}
+.mySwiperSlide .swiper-pagination-bullet {
+   width: 25px;
+   height: 25px;
+   font-size: 16px;
+   border-radius: 100%;
+   margin: 0 10px !important;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 600;
+   color: #fff;
+}
+
+.mySwiperSlide .swiper-pagination-bullet-active {
+   color: #fff;
+   background-color: #e10422;
+}
+@media (max-width: 576px) {
+   .mySwiperSlide .swiper-pagination {
+      margin-top: 60px;
+   }
+   .mySwiperSlide .swiper-pagination-bullet {
+      margin: 0 20px !important;
+   }
+}

@@ -1,0 +1,138 @@
+.wrapper {
+   padding-top: 30px;
+   background-color: #f2f6fc;
+   width: 100%;
+}
+.contact-container {
+   width: 75%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+}
+.row {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 30px;
+}
+.item-box {
+   width: 30%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+.item-box img {
+   width: 40%;
+}
+.item-box p {
+   font-size: 20px;
+   font-weight: 600;
+   margin-top: 10px;
+   text-align: center;
+   color: #2a354e;
+}
+.img-contact {
+   width: 50%;
+   height: 407px;
+}
+.input-form {
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   margin: 0 auto;
+   padding: 20px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-box {
+   margin-bottom: 20px;
+}
+
+input[type='text'] {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #45a049;
+   border-radius: 4px;
+}
+textarea {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #45a049;
+   border-radius: 4px;
+}
+input[type='text'].errorr {
+   // Red border for invalid input
+   border: 1px solid red;
+}
+input[type='text'].errorr:focus {
+   border: 1px solid red;
+}
+input[type='text']:focus {
+   outline: none;
+   border: 1px solid #4caf50; /* Change this to the color you want */
+}
+textarea:focus {
+   outline: none;
+   border: 1px solid #4caf50; /* Change this to the color you want */
+}
+.btn-submit {
+   padding: 10px 20px;
+   background-color: #4caf50;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   text-align: center;
+}
+
+.btn-submit:hover {
+   background-color: #45a049;
+}
+
+.error {
+   color: red;
+   margin-top: 5px;
+   position: relative;
+   padding: 5px 8px;
+   line-height: 1.2em;
+   border-radius: 3px;
+   opacity: 0.8;
+   background-color: #eee1e1;
+   border-radius: 3px;
+}
+.error::after {
+   bottom: 100%;
+   left: 30px;
+   border: solid transparent;
+   content: ' ';
+   height: 0;
+   width: 0;
+   position: absolute;
+   pointer-events: none;
+   border-color: rgba(136, 183, 213, 0);
+   border-bottom-color: #eee1e1;
+   border-width: 10px;
+   margin-left: -10px;
+}
+.error-submit {
+   margin: 2em 0.5em 1em;
+   padding: 0.2em 1em;
+   border: 2px solid red;
+   border-radius: 4px;
+   color: red;
+   text-align: center;
+}
+.success-submit {
+   margin: 2em 0.5em 1em;
+   padding: 0.2em 1em;
+   border: 2px solid #45a049;
+   border-radius: 4px;
+   text-align: center;
+   color: #45a049;
+}
+.text-form {
+   font-size: 20px;
+   font-weight: 600;
+   margin-bottom: 20px;
+   color: #2a354e;
+}

@@ -1,0 +1,99 @@
+.list-item-count {
+   width: 180px;
+   height: 166px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.item-count {
+   flex-direction: column;
+}
+.list-item-count .item-count {
+   width: 50%;
+   margin: auto;
+   transition: 0.5s;
+}
+.image-count {
+   height: 80px;
+   width: 80px;
+   background: #d5e2f3;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 100%;
+   position: relative;
+   transition: 0.5s;
+   margin: auto;
+}
+.list-item-count .item-count .image-count .hover-show-count {
+   height: 80px;
+   width: 80px;
+   background: #fcd2d3;
+   border-radius: 100%;
+   position: absolute;
+   z-index: -1;
+   top: 7px;
+   left: 7px;
+   opacity: 0;
+   transition: 0.5s;
+}
+.icon-count {
+   text-align: center;
+}
+.number-count {
+   text-align: center;
+}
+.text-count {
+   text-align: center;
+}
+.list-item-count .item-count .number-count {
+   color: #065a9e;
+   font-size: 30px;
+   font-weight: 700;
+   letter-spacing: 1px;
+   margin: 10px 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 45px;
+   position: relative;
+}
+.list-item-count .item-count .text-count {
+   text-transform: capitalize;
+   color: var(--black-color);
+   font-size: 1.4rem;
+}
+.list-item-count:hover .item-count {
+   position: relative;
+   top: -5px;
+   z-index: 1;
+   transition: 0.5s;
+   transform: translateY(-5%);
+}
+.list-item-count:hover .item-count .image-count {
+   transition: 0.5s;
+   background-color: #ec1f24;
+}
+.list-item-count:hover .item-count .hover-show-count {
+   opacity: 1;
+   transition: 0.5s;
+}
+.list-item-count:hover .item-count .image-count img {
+   filter: invert(5) sepia(0) saturate(1) hue-rotate(0deg) brightness(5);
+   transition: 0.5s;
+}
+.list-item-count:hover .item-count .number-count,
+.list-item-count:hover .item-count .text-count {
+   color: #ec1f24;
+   transition: 0.5s;
+}
+@media (max-width: 576px) {
+   .list-item-count .item-count .number-count {
+      font-size: 17px;
+      margin: 0;
+   }
+   .list-item-count {
+      width: 140px;
+      height: 154px;
+   }
+}

@@ -1,0 +1,71 @@
+.tab-list {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   padding-left: 20px;
+}
+.myCustomTab {
+   background: transparent !important;
+   border: 0 !important;
+   color: #1c3967 !important;
+   font-weight: 700 !important;
+   font-size: 18px !important;
+   padding: 15px 0 !important;
+   margin: 0 10px !important;
+   width: 30% !important;
+   text-transform: none !important;
+}
+.myCustomTabActive {
+   color: red !important;
+   border-bottom: 2px solid red !important;
+   position: relative;
+   z-index: 1;
+}
+.title-text {
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 22.5px;
+   padding: 10px 0 20px;
+}
+.title-section {
+   display: flex;
+   justify-content: center;
+}
+.tab span {
+   display: inline-block;
+   height: 17px;
+   width: 4px;
+   background-color: #ccc;
+   margin: 13px 50px;
+}
+.image-content {
+   margin-bottom: 30px;
+}
+.image-content img {
+   width: 100%;
+   height: auto;
+}
+.tab1 {
+   color: #000;
+   width: 100%;
+   margin: 10px auto;
+}
+.content {
+   font-size: 15px;
+   text-align: left;
+   line-height: 22.5px;
+   text-align: justify;
+   width: 100%;
+}
+.sub_section {
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 22.5px;
+   padding: 20px 0 20px;
+}
+.sub_section ~ p {
+   font-size: 15px;
+   font-weight: 400;
+   line-height: 22.5px;
+   padding: 10px 0 10px;
+}
